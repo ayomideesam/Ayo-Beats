@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #444;
+    --overlay-color: rgba(0,0,0,0.4);
+    --font: @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.6;
+    color:#333;
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.3;
+}
+
+a {
+    color: var(--secondary-color) !important;
+    text-decoration: none !important;
+}
+
+ul {
+     list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.navbar .logo {
+    font-size: 2rem;
+}
+
+.navbar .nav {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav a {
+    padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+    color: #555;
+}
+
+/* Contact Section */
+
+.header-title-wrap {
+    background-color: rgba(19,136,148,0.6);
+    /* background-color: #138894; */
+    /* background-color: rgba(35, 31, 32, .2); */
+    border-radius: 0 0 15px 15px;
+    padding-bottom: -15px !important;
+}
+
+.section-a {
+    margin-bottom: 30px;
+}
+
+.custom_header_section {
+    padding: 50px 20px 30px 20px;
+    text-align: center;
+}
+
+.custom_header {
+    font-size: 37px;
+    line-height: 40px;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    color: #2f353d;
+    margin: 10px 0 20px;
+    text-align: center;
+    font-family: var(--font) ;
+}
+
+.custom_sub_header {
+    font-size: 22px;
+    line-height: 25px;
+    color: #504d56;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px !important;
+    margin-left: 7rem !important;
+}
+
+.
+
+.row .custom_support_section {
+    margin: 30px;
+    padding: 20px 45px;
+    border: #ccc dashed 1px;
+    border-radius: 5px;
+    background: rgba(230, 230, 230, 0.2);
+}
+
+form .field .field {
+    margin-top: 15px;
+}
+
+form button {
+    display: block;
+    padding: 5px 35px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.section-footer {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.section-footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.section-footer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.section-footer h3 {
+    margin-bottom: 0.7rem;
+}
+
+.section-footer a {
+    line-height: 1.9;
+    color: #ccc !important;
+}
+
+.section-footer a > i {
+    color: #555;
+    font-size: 1.6rem !important;
+    margin-left: 0.5rem;
+}
+
+/* Email Form */
+
+.email-form {
+    width: 100%;
+    display: inline-block;
+    background-color: #555;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0;
+    margin-top: 1rem;
+}
+
+.email-form .form-control {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: #ddd;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.email-form .submit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 45px;
+    background-color: #eee;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 1050px) {
+    .row .custom_support_section {
+        margin-top: 5px;
+        width: 50rem;
+        padding: 20px 20px 20px 20px;
+        border: #ccc dashed 1px;
+        border-radius: 5px;
+        background: rgba(230, 230, 230, 0.2);
+        margin-left: -1rem;
+    }
+
+    .row .custom_support_section div ol{
+        font-size: 16px;
+        padding: 20px 1px 20px 15px;
+    }
+
+    .row .custom_support_section .custom_support_section_wrapper form div {
+        margin-top: 15px;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 710px) {
+    .section-a .custom_header_section .custom_header {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .section-a .custom_header_section .custom_sub_header {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .section-footer {
+        padding: 1.8rem 0;
+    }
+
+    .section-footer .container {
+        grid-template-columns: 1fr;
+        text-align: center
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar .container {
+        align-items: center;
+        grid-gap: 100px;
+    }
+
+    .navbar .container h1 {
+        font-size: 1.5rem;
+        padding-top: 5px;
+    }
+
+    .navbar .container .nav {
+        padding: 0 9px;
+        font-size: 17px;
+    }
+
+    .row .custom_support_section {
+        margin-top: 5px;
+        padding: 20px 10px 20px 15px;
+        border: #ccc dashed 1px;
+        border-radius: 5px;
+        background: rgba(230, 230, 230, 0.2);
+        margin-left: -5rem;
+    }
+
+    .row .custom_support_section div ol{
+        font-size: 16px;
+        padding: 20px 1px 20px 15px;
+    }
+
+    .row .custom_support_section .custom_support_section_wrapper form div {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 330px) {
+    
+    .navbar .container {
+        align-items: center;
+        grid-gap: 10px;
+    }
+
+    .navbar .container h1 {
+        font-size: 1.5rem;
+        padding-top: 5px;
+        margin-left: -14px;
+    }
+
+    .navbar .container .nav {
+        padding: 0 1px;
+        font-size: 15px;
+    }
+
+    .section-a .custom_header_section .custom_header {
+        font-size: 2.1rem;
+        text-align: center;
+        margin-top: -30px;
+    }
+}
